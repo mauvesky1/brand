@@ -1,79 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
-    <link href="./app.css" rel="stylesheet" />
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    <script
+      src="https://kit.fontawesome.com/975d0f40c3.js"
       crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900| Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
-    <header class="container-fluid">
-      <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Robert Draper</a>
-          </div>
+    <header>
+      <div class="logo">
+        <img src="" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Servies</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My work</a>
+          </li>
+        </ul>
       </nav>
-     
     </header>
-    <div class="container-fluid">
-    
-      <section class="col-sm-8">
-        <h1>Web Developer</h1>
-        <p> logos to click for github, cv and resume
-          ... and a background image please!
-        </p>
-      </section>
-     
-    </div>
-    <div class="container-fluid">
-     <section>
-      Project details
-      
-      NC - News
-      Reddit Style App
-     </section> 
-    </div>
-    <div class="container-fluid">
-      <section>
-       Contact details
-    
-        Email
-        Phone number
-      </section>
-    </div>
-    
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong> A </strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        front end developer
+      </p>
+      <img src="" alt="" class="intro__img" />
+    </section>
+
+    <!-- My Services-->
+
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>BackEnd</h3>
+          <p>Paragraph</p>
+        </div>
+        <!-- / service-->
+        <div class="service">
+          <h3>Design + Development</h3>
+          <p>Paragraph</p>
+        </div>
+        <!-- / service-->
+        <div class="service">
+          <h3>E-Commerce</h3>
+          <p>Paragraph</p>
+        </div>
+        <!-- / service-->
+      </div>
+      <!-- / services -->
+      <a href="#work" class="btn"> My work</a>
+    </section>
+
+    <!-- About Me-->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">Blar</p>
+
+      <div class="about-me__body">
+        <p>Paragraph</p>
+        <p>Para</p>
+      </div>
+      <img src="" alt="" />
+    </section>
+
+    <!-- My Work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle"></p>
+      <div class="portfolio">
+        <!--Portfolio Item 01-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-01.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 02-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-02.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 03-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-03.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 04-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-04.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 05-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-05.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 06-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-06.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 07-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-07.jpg" class="portfolio__img" />
+        </a>
+
+        <!--Portfolio Item 08-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-08.jpg" class="portfolio__img" />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-09.jpg" class="portfolio__img" />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img src="./images/portfolio-10.jpg" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+    <!--Footer-->
     <footer>
-      <h1>Goodbye</h1>
+      <a href="mailto:hello" class="footer__link"> </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://twitter.com" class="social-list__link">a</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com" class="social-list__link">b</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com" class="social-list__link">c</a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com" class="social-list__link">d</a>
+        </li>
+      </ul>
     </footer>
-    <!-- Latest compiled and minified JavaScript -->
-    <script
-      src="http://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

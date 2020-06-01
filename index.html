@@ -1,166 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <div
+      class="jumbotron jumbotron-fluid text-white text-center"
+      style="background-color: azure;"
+    >
+      <div class="container" style="background: skyblue;">
+        <h1 class="display-1">Welcome to the Dojo</h1>
+        <p class="lead">Blurp</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Cards-->
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid" src= ./firebase.png />
+            <div class="card-block">
+              <h3 class="card-title">Node Training</h3>
+              <p>Lorem Ipsum blarg</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid" src=./node.jpeg />
+            <div class="card-block">
+              <h3 class="card-title">Mongo Training</h3>
+              <p>Lorem Ipsum blarg</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid" src=./firebase.png />
+            <div class="card-block">
+              <h3 class="card-title">Another Training</h3>
+              <p>Lorem Ipsum blarg</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card">
+            <img class="card-img-top img-fluid" src=./node.jpeg />
+            <div class="card-block">
+              <h3 class="card-title">And another Training</h3>
+              <p>Lorem Ipsum blarg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="display-4 text-center py-5 my-4">Meet the projects</h2>
+
+      <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+        <a class="nav-link active" href="">The Net Ninja</a>
+        <a class="nav-link" href="">The Web wzard</a>
+
+        <a class="nav-link" href="">The Captain Code</a>
+        <a class="nav-link" href="">The React Ninja</a>
+      </nav>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://kit.fontawesome.com/975d0f40c3.js"
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
     ></script>
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900| Source+Sans+Pro:300,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="" alt="" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">My Servies</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">My work</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong> A </strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">
-        front end developer
-      </p>
-      <img src="" alt="" class="intro__img" />
-    </section>
-
-    <!-- My Services-->
-
-    <section class="my-services" id="services">
-      <h2 class="section__title section__title--services">What I do</h2>
-      <div class="services">
-        <div class="service">
-          <h3>BackEnd</h3>
-          <p>Paragraph</p>
-        </div>
-        <!-- / service-->
-        <div class="service">
-          <h3>Design + Development</h3>
-          <p>Paragraph</p>
-        </div>
-        <!-- / service-->
-        <div class="service">
-          <h3>E-Commerce</h3>
-          <p>Paragraph</p>
-        </div>
-        <!-- / service-->
-      </div>
-      <!-- / services -->
-      <a href="#work" class="btn"> My work</a>
-    </section>
-
-    <!-- About Me-->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about">Blar</p>
-
-      <div class="about-me__body">
-        <p>Paragraph</p>
-        <p>Para</p>
-      </div>
-      <img src="" alt="" />
-    </section>
-
-    <!-- My Work-->
-    <section class="my-work" id="work">
-      <h2 class="section__title">My work</h2>
-      <p class="section__subtitle"></p>
-      <div class="portfolio">
-        <!--Portfolio Item 01-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-01.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 02-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-02.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 03-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-03.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 04-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-04.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 05-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-05.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 06-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-06.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 07-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-07.jpg" class="portfolio__img" />
-        </a>
-
-        <!--Portfolio Item 08-->
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-08.jpg" class="portfolio__img" />
-        </a>
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-09.jpg" class="portfolio__img" />
-        </a>
-        <a href="#" class="portfolio__item">
-          <img src="./images/portfolio-10.jpg" class="portfolio__img" />
-        </a>
-      </div>
-    </section>
-    <!--Footer-->
-    <footer>
-      <a href="mailto:hello" class="footer__link"> </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="https://twitter.com" class="social-list__link">a</a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://twitter.com" class="social-list__link">b</a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://twitter.com" class="social-list__link">c</a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://twitter.com" class="social-list__link">d</a>
-        </li>
-      </ul>
-    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
